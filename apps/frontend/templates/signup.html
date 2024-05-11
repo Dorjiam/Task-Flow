@@ -1,0 +1,47 @@
+{% extends "base.html" %} {% load static %}
+
+<div></div>
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'styles/signup.css' %}?{% now 'U' %}" />
+{% endblock %}
+
+<div></div>
+
+{% block title %}Sign up{% endblock %}
+
+<div></div>
+
+{% block content %}
+
+<section class="signup-body">
+	<div class="signup">
+		<form method="post">
+			<h2>Sign up</h2>
+			<div class="input-box username">
+				<i class="ri-user-line"></i>
+				<h3>Username</h3>
+			</div>
+			<div class="input-box email">
+				<i class="ri-mail-line"></i>
+				<h3>Email</h3>
+			</div>
+			<div class="input-box password">
+				<i class="ri-lock-line"></i>
+				<h3>Password</h3>
+			</div>
+			<div class="input-box password-conf">
+				<i class="ri-lock-line"></i>
+				<h3>Confirm Password</h3>
+			</div>
+
+			<button type="submit" class="login__button">Login</button>
+
+			<p>
+				Already have an account? <strong><a href="/login">Login</a></strong>
+			</p>
+		</form>
+	</div>
+</section>
+
+{% endblock %}

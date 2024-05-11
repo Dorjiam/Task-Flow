@@ -1,0 +1,19 @@
+{% extends "base.html" %} {% load static %}
+
+<div></div>
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'styles/login.css' %}?{% now 'U' %}" />
+{% endblock %}
+
+<div></div>
+
+{% block title %}Login{% endblock %}
+
+<div></div>
+
+{% block content %}
+
+<section class="login-body"></section>
+
+{% endblock %}
